@@ -1,4 +1,374 @@
+.Wrap {
+    overflow: hidden;
+}
+
 .inner {
+    display: flex;
     width: 1200px;
     margin: 0 auto;
+    align-items: center;
+}
+
+#header .inner {
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+}
+
+#header {
+    border-top: 2px solid #000;
+    background: #f6f5ef;
+    border-bottom: 1px solid #e5e5e5;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: 140px;
+    z-index: 999;
+
+
+}
+
+
+#header .inner .top nav>ul {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+
+    font-size: 14px;
+    align-items: center;
+}
+
+#header .inner .top nav>ul>li {
+    position: relative;
+}
+
+#header .inner .top nav>ul>li~li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 1px;
+    height: 100%;
+
+    background: #ddd;
+}
+
+#header .inner .top nav>ul>li:nth-child(5):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 1px;
+    height: 100%;
+
+    background: #ddd;
+
+    display: none;
+}
+
+#header .inner .top nav>ul li i {
+    font-size: 18px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+#header .inner .bottom nav>ul {
+    display: flex;
+    gap: 30px;
+
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+#header .inner .header_right .bottom {
+    line-height: 30px;
+}
+
+main {
+    padding-top: 140px;
+}
+
+#mainVisual {
+    position: relative;
+    max-width: 100%;
+    height: 30vw;
+    background: url(../img/2023_newyear_top_bg.jpg) no-repeat center center/cover;
+}
+
+#mainVisual .Visual_left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+
+    margin: 0 0 0 -600px;
+}
+
+#mainVisual .Visual_left {
+    text-align: center;
+}
+
+#mainVisual .Visual_left .img_box {
+    width: 244px;
+    margin-bottom: 60px;
+}
+
+#mainVisual .Visual_left .text_box {
+    font-size: 14px;
+
+    color: #046241;
+}
+
+#mainVisual .Visual_left .text_box a {
+    border: 2px solid #046241;
+    padding: 8px 14px 8px 14px;
+    border-radius: 5px;
+}
+
+#mainVisual .Visual_left .text_box a:hover {
+    background: #046241;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#mainVisual .Visual_right {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    height: 100%;
+}
+
+#mainVisual .Visual_right .itm {
+    width: 260px;
+}
+
+#mainVisual .Visual_right .itm01 {
+    position: absolute;
+    top: -180px;
+    left: -200px;
+}
+
+#mainVisual .Visual_right .itm02 {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+
+#mainVisual .Visual_right .itm03 {
+    position: absolute;
+    top: -150px;
+    left: 200px;
+}
+
+#lineNotice {
+    height: 62px;
+}
+
+#lineNotice .left_bg {
+    position: relative;
+    float: left;
+    background: #000;
+
+    height: 62px;
+    width: 50%;
+}
+
+
+#lineNotice .right_bg {
+    position: relative;
+    float: right;
+    background: #fff;
+
+    height: 62px;
+    width: 50%;
+}
+
+.ul_slide .slick-arrow {
+    border: none;
+    background: inherit;
+    font-size: 0;
+    opacity: 0;
+}
+
+.slick-list {
+    width: 350px;
+}
+
+.ul_slide li {
+    color: #fff;
+    font-size: 14px;
+}
+
+.ul_slide {
+    position: relative;
+}
+
+.ul_slide::before {
+    content: "공지사항";
+    position: absolute;
+    top: 29%;
+    left: -100px;
+
+    font-size: 20px;
+    color: #fff;
+}
+
+#lineNotice .left_bg .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 0 0 600px;
+}
+
+#lineNotice .left_bg .inner .icon {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#lineNotice .right_bg .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 0 0 400px;
+}
+
+#lineNotice .right_bg .inner a {
+    font-size: 20px;
+    margin-right: 140px;
+}
+
+#lineNotice .right_bg .inner span {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+
+
+#newRewards {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: #1e3932;
+
+    height: 300px;
+}
+
+#newRewards .inner {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 30px;
+}
+
+#newRewards .inner .logo {
+    width: 176px;
+    font-size: 0;
+}
+
+#newRewards .inner .f_inner {
+    position: relative;
+
+}
+
+.signinGroup {
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.signinGroup .left {
+    color: #fff;
+    background: #046241;
+
+    padding: 11px 15px 11px 15px;
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.signinGroup .right {
+    color: #fff;
+    border: 2px solid #fff;
+
+    padding: 8px 12px 8px 12px;
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    margin-left: 5px;
+}
+
+
+#newRewards .inner .text_box h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+
+    margin-bottom: 20px;
+}
+
+#newRewards .inner .text_box p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+
+}
+
+#newRewards .inner .text_box span {
+    font-weight: 700;
+}
+
+#newRewards .inner .text_box .signinGroup .left {
+    font-size: 18px;
+    color: #fff;
+    background: #046241;
+
+}
+
+#newRewards .bottom {
+    border-top: 1px solid #4b615b;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+}
+
+#newRewards .bottom .left {
+    margin-top: 20px;
+    margin-right: 90px;
+    line-height: 20px;
+}
+
+#newRewards .bottom .left span {
+    font-weight: 700;
+}
+
+#newRewards .bottom .right {
+    margin-top: 20px;
+}
+
+#newRewards .bottom .right a {
+    padding: 12px 15px 12px 15px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+#mainBean {
+    position: relative;
+    height: 500px;
+    background: url(../img/2023_newyear_promotion_bg.jpg) no-repeat center center/cover;
+
 }
