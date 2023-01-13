@@ -1,0 +1,324 @@
+.sub_tit_wrap .inner {
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub_tit_wrap .inner .left_box {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.sub_tit_wrap .inner .right_box {
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+.sub_tit_wrap .inner .right_box ul {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_tit_wrap .inner .right_box i {
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.sub_slick {
+    position: relative;
+}
+
+.sub_slick ul {
+    width: 100%;
+}
+
+.sub_slick .slick-list {
+    width: 100%;
+}
+
+.sub_slick .slick-arrow {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: 0 0 0 -650px;
+    z-index: 999;
+
+    border: 0;
+    font-size: 0;
+
+    width: 55px;
+    height: 55px;
+    background: url(../img/mscard_arrow_l_off.png) no-repeat center center/cover;
+}
+
+.sub_slick .slick-arrow:hover {
+    background: url(../img/mscard_arrow_l_on.png) no-repeat center center/cover;
+    transition: 1s;
+}
+
+.sub_slick .slick-prev {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: 0 0 0 650px;
+
+    width: 55px;
+    height: 55px;
+    background: url(../img/mscard_arrow_r_off.png) no-repeat center center/cover;
+}
+
+.sub_slick .slick-prev:hover {
+    background: url(../img/mscard_arrow_r_on.png) no-repeat center center/cover;
+    transition: 1s;
+}
+
+.sub_slick .slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+
+.sub_slick .slick-dots>li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #4d4947;
+    margin: 0 2px;
+    border-radius: 50%;
+
+}
+
+.sub_slick .slick-dots>li.slick-active {
+    background: #098d5f;
+}
+
+.sub_slick .slick-dots>li button {
+    display: none;
+}
+
+.coffee_hs_wrap {
+    position: relative;
+    height: 430px;
+    background: url(../img/coffee_hs_bg_221116.jpg) 20% 50% no-repeat;
+    background-size: cover;
+}
+
+.coffee_hs_wrap .right_box {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+
+.coffee_hs_wrap .right_box h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.coffee_hs_wrap .right_box h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.coffee_hs_wrap .right_box p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #c9c9c9;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.coffee_hs_wrap .right_box a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+
+    padding: 8px 18px 8px 18px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.coffee_hs_wrap .right_box a:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+
+.coffee_reserve_wrap {
+    position: relative;
+    height: 430px;
+    background: url(../img/coffee_reserve_wrap_bg.jpg) 80% 50% no-repeat;
+    background-size: cover;
+}
+
+.coffee_reserve_wrap .left_box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin: 0 0 0 -600px;
+}
+
+.coffee_reserve_wrap .left_box h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.coffee_reserve_wrap .left_box h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.coffee_reserve_wrap .left_box p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #535353;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.coffee_reserve_wrap .left_box a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+
+    padding: 8px 18px 8px 18px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.coffee_reserve_wrap .left_box a:hover {
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.coffee_espresso_wrap {
+    position: relative;
+    height: 430px;
+    background: url(../img/coffee_espresso_wrap_bg.jpg) 20% 50% no-repeat;
+    background-size: cover;
+}
+
+.coffee_espresso_wrap .right_box {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+
+.coffee_espresso_wrap .right_box h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.coffee_espresso_wrap .right_box h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.coffee_espresso_wrap .right_box p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #c9c9c9;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.coffee_espresso_wrap .right_box a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+
+    padding: 8px 18px 8px 18px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.coffee_espresso_wrap .right_box a:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+
+.coffee_best_wrap {
+    position: relative;
+    height: 430px;
+    background: url(../img/coffee_best_wrap_bg.jpg) 80% 50% no-repeat;
+    background-size: cover;
+}
+
+.coffee_best_wrap .left_box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin: 0 0 0 -600px;
+}
+
+.coffee_best_wrap .left_box h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.coffee_best_wrap .left_box h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.coffee_best_wrap .left_box p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #535353;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.coffee_best_wrap .left_box a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+
+    padding: 8px 18px 8px 18px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.coffee_best_wrap .left_box a:hover {
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.line .right_bg .bg {
+    width: 100%;
+}
+
+.line .right_bg {
+    position: relative;
+}
+
+.line .right_bg::after {
+    content: "";
+    background: url(../img/useInfo_app.png) no-repeat center center/cover;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+
+    width: 70px;
+    height: 55px;
+}
